@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Dashboard</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          135deg,
+          #6a11cb,
+          #2575fc
+        ); /* Background Gradient */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        padding: 10px;
+      }
+
+      .container {
+        text-align: center;
+        background-color: #fff;
+        padding: 40px 50px;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        transition: transform 0.3s ease;
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+      }
+
+      h1 {
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 18px 35px;
+        margin: 15px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #0056b3;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+      }
+
+      .button:active {
+        background-color: #004085;
+        transform: translateY(0);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 30px;
+          max-width: 90%;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        .button {
+          font-size: 16px;
+          padding: 15px 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Your Project Dashboard</h1>
+      <a href="https://email-client-sandy.vercel.app/?check=all" class="button"
+        >Email Client</a
+      >
+      <a href="http://piyushnexus.com" class="button">Analytics Dashboard</a>
+    </div>
+  </body>
+</html>
